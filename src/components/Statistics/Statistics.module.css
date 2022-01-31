@@ -1,0 +1,33 @@
+.statistics {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.title {
+  margin: 0px;
+  text-align: center;
+}
+.stat__list {
+  display: flex;
+  padding-left: 0px;
+  align-items: center;
+}
+.item {
+  height: 70px;
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hotpink;
+}
+
+.label {
+  font-size: 14px;
+}
+.percent {
+  margin-top: 5px;
+  font-size: 22px;
+}

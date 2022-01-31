@@ -1,0 +1,32 @@
+.transaction__history {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-collapse: collapse;
+}
+
+tr {
+  border: 1px solid #bbb; /* границы между строками */
+}
+
+td,
+th {
+  border: 1px solid #bbb; /* границы между столбцами */
+}
+
+td,
+th {
+  text-align: center;
+}
+
+.transaction__head {
+  height: 40px;
+}
+.transaction__row {
+  height: 40px;
+}
+tbody tr:nth-child(even) {
+  background-color: rgb(203, 212, 233);
+}

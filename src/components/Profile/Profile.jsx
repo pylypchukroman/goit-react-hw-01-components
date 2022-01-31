@@ -1,33 +1,34 @@
 import user from "../../data/user.json";
 import PropTypes from 'prop-types';
+import style from './Profile.module.css';
 
 const Profile = (user) => {
 const {avatar, username, tag, location, stats} = user
     return (
-        <div className="profile">
-  <div className="description">
+        <div className={style.profile}>
+  <div className={style.description}>
     <img
       src={avatar}
       alt="User avatar"
-      className="avatar"
+      className={style.avatar}
     />
-    <p className="name">{username}</p>
-    <p className="tag">@{tag}</p>
-    <p className="location">{location}</p>
+          <p className={style.name}>{username}</p>
+    <p className={style.tag}>@{tag}</p>
+    <p className={style.location}>{location}</p>
   </div>
 
-  <ul className="stats">
-    <li>
-      <span className="label">Followers </span>
-    <span className="quantity">{stats.followers}</span>
+  <ul className={style.stats}>
+    <li className={style.profile__item}>
+      <span className={style.label}>Followers </span>
+    <span className={style.quantity}>{stats.followers}</span>
     </li>
-    <li>
-      <span className="label">Views </span>
-    <span className="quantity">{stats.views}</span>
+    <li className={style.profile__item}>
+      <span className={style.label}>Views </span>
+    <span className={style.quantity}>{stats.views}</span>
     </li>
-    <li>
-      <span className="label">Likes </span>
-    <span className="quantity">{stats.likes}</span>
+    <li className={style.profile__item}>
+      <span className={style.label}>Likes </span>
+    <span className={style.quantity}>{stats.likes}</span>
     </li>
   </ul>
 </div>
