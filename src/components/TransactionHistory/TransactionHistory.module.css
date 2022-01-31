@@ -5,15 +5,16 @@
   padding: 0px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-collapse: collapse;
+  margin-top: 50px;
 }
 
 tr {
-  border: 1px solid #bbb; /* границы между строками */
+  border: 1px solid #bbb;
 }
 
 td,
 th {
-  border: 1px solid #bbb; /* границы между столбцами */
+  border: 1px solid #bbb;
 }
 
 td,
